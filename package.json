@@ -1,0 +1,12 @@
+{
+  "name": "monorepo-vite-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pnpm --filter app dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
