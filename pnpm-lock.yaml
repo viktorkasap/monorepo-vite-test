@@ -10,6 +10,12 @@ importers:
 
   app:
     dependencies:
+      '@mono/ui':
+        specifier: workspace:*
+        version: link:../packages/ui
+      '@mono/utils':
+        specifier: workspace:*
+        version: link:../packages/utils
       react:
         specifier: ^18.2.0
         version: 18.2.0
