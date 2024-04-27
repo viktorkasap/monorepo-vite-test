@@ -9,5 +9,8 @@ start: ## ✨ Start localhost project
 pretty: ## Clean code style
 	pnpm pretty
 
+type-check: ## Check types
+	pnpm type-check
+
 build: ## Build project
 	pnpm build
