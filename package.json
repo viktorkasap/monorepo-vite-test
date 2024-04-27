@@ -1,0 +1,20 @@
+{
+  "name": "monorepo-vite-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pnpm --filter app dev",
+    "build": "pnpm --filter app build",
+    "pretty": "prettier --write app packages",
+    "style": "stylelint \"**/*.css\" --fix",
+    "type-check": "tsc --noEmit",
+    "test:all": "pnpm -r test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.2"
+  }
+}
