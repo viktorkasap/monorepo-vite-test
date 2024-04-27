@@ -4,6 +4,11 @@
 ### Todo
 - [ ] Vite TS @alias import plugin 
 - [ ] FSD ESLint plugin
-- [ ] Prettier  
+- [x] Prettier  
 - [ ] ESLint
 - [ ] Husky
+
+```bash
+# Example install some library into specific package folder 
+pnpm install -D labraryName --filter utils
+```
