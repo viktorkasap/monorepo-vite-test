@@ -1,5 +1,5 @@
 import { ChangeEvent, useState } from 'react';
-import { Button, Input } from '@mono/ui';
+import { Button, Input, Text } from '@mono/ui';
 import { add } from '@mono/utils';
 import './App.css';
 
@@ -14,6 +14,7 @@ function App() {
   };
   return (
     <div>
+      <Text tag="h2">Some Heading here</Text>
       <Input type="text" value={nums.a} onChange={handleNumChange('a')} />
       <Input type="text" value={nums.b} onChange={handleNumChange('b')} />
       <Button
