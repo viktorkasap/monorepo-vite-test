@@ -5,3 +5,6 @@ install: ## ✨ Install pnpm required packages
 
 start: ## ✨ Start localhost project
 	pnpm dev
+
+pretty: ## Clean code style
+	pnpm pretty
