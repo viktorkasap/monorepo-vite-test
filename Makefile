@@ -8,3 +8,6 @@ start: ## ✨ Start localhost project
 
 pretty: ## Clean code style
 	pnpm pretty
+
+build: ## Build project
+	pnpm build

@@ -1,8 +1,8 @@
-.Input {
-  padding: 0.4rem 0.8rem;
-  color: var(--color6);
-  border-radius: 0.4rem;
+.input {
   border: 1px solid #888;
+  border-radius: 0.4rem;
+  color: var(--color6);
+  padding: 0.4rem 0.8rem;
 
   &:focus {
     outline-color: var(--color6);
