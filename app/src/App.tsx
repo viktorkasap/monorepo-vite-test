@@ -10,6 +10,8 @@ import { Form } from '@features/form';
 
 import styles from './Styles.module.css';
 
+const a = '';
+
 function App() {
   const [nums, setNums] = useState({ a: '', b: '' });
   const handleNumChange = (key: keyof typeof nums) => (e: ChangeEvent<HTMLInputElement>) => {

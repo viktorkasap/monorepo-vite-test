@@ -7,10 +7,11 @@
     "dev": "pnpm --filter app dev",
     "build": "pnpm --filter app build",
     "pretty": "prettier --write app packages",
-    "style": "stylelint \"**/*.css\" --fix",
-    "lint": "eslint 'app/src/**/*.{ts,tsx}' 'packages/*/src/**/*.{ts,tsx}' --fix",
+    "lint:style": "stylelint \"**/*.css\" --fix",
+    "lint:code": "eslint 'app/src/**/*.{ts,tsx}' 'packages/*/src/**/*.{ts,tsx}' --fix",
     "type-check": "tsc --noEmit",
-    "test:all": "pnpm -r test"
+    "test:all": "pnpm -r test",
+    "pre-commit": "lint-staged"
   },
   "keywords": [],
   "author": "",
@@ -31,6 +32,7 @@
     "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
+    "lint-staged": "^15.2.2",
     "postcss": "^8.4.38",
     "postcss-color-function": "^4.1.0",
     "postcss-import": "^16.1.0",

@@ -7,16 +7,16 @@ start: ## ✨ Start localhost project
 pretty: ## ✨ Clean code style
 	pnpm pretty
 
-style: ## ✨ Clean styles
-	pnpm style
+lint-style: ## ✨ Clean styles
+	pnpm lint:style
 
-lint: ## ✨ Check code
-	pnpm lint
+lint-code: ## ✨ Check code
+	pnpm lint:code
 
 type-check: ## ✨ Check types
 	pnpm type-check
 
-test: ## ✨ Testing
+test-all: ## ✨ Testing
 	pnpm test:all
 
 build: ## ✨ Build project
