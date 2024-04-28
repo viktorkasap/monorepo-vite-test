@@ -10,9 +10,6 @@ import { Form } from '@features/form';
 
 import styles from './Styles.module.css';
 
-// const a = '';
-// const c = '';
-
 function App() {
   const [nums, setNums] = useState({ a: '', b: '' });
   const handleNumChange = (key: keyof typeof nums) => (e: ChangeEvent<HTMLInputElement>) => {
@@ -25,7 +22,7 @@ function App() {
   return (
     <Box className={styles.box}>
       <Box2>Example Second Box component</Box2>
-      <Text tag="h1" className={styles.title}>
+      <Text tag="h3" className={styles.title}>
         Some Title Here
       </Text>
       <Form>

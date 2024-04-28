@@ -2,6 +2,13 @@
   "extends": ["stylelint-config-standard", "stylelint-config-css-modules"],
   "plugins": ["stylelint-order"],
   "rules": {
+    "rule-empty-line-before": [
+      "always",
+      {
+        "except": ["first-nested", "after-rule"],
+        "ignore": ["after-comment"]
+      }
+    ],
     "order/order": ["custom-properties", "declarations"],
     "order/properties-order": [
       [

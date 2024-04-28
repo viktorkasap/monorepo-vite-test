@@ -10,18 +10,16 @@
   line-height: 1.5;
   text-rendering: optimizelegibility;
 }
-
-
 a {
+  --color1: #fff;
+
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
 }
-
 a:hover {
   color: #535bf2;
 }
-
 body {
   display: flex;
   min-width: 320px;
@@ -29,12 +27,10 @@ body {
   margin: 0;
   place-items: center;
 }
-
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
-
 button {
   padding: 0.6em 1.2em;
   font-size: 1em;
@@ -46,11 +42,9 @@ button {
   cursor: pointer;
   font-family: inherit;
 }
-
 button:hover {
   border-color: #646cff;
 }
-
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -61,11 +55,9 @@ button:focus-visible {
     color: #213547;
     background-color: #fff;
   }
-
   a:hover {
     color: #747bff;
   }
-
   button {
     background-color: #f9f9f9;
   }
