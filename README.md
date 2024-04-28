@@ -61,6 +61,6 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; `
   iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 ```
 
-4. Answer Yes when prompted
+4. Answer `Yes` when prompted
 5. Close and reopen an elevated PowerShell window to start using `choco`
 6. PowerShell 👉 `choco install make`
