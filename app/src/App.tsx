@@ -12,7 +12,6 @@ import './App.css';
 
 function App() {
   const [nums, setNums] = useState({ a: '', b: '' });
-
   const handleNumChange = (key: keyof typeof nums) => (e: ChangeEvent<HTMLInputElement>) => {
     setNums((prevState) => ({
       ...prevState,

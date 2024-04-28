@@ -1,6 +1,15 @@
 # Monorepo Vite
 > 👉 [Article Ref](https://dev.to/lico/react-monorepo-setup-tutorial-with-pnpm-and-vite-react-project-ui-utils-5705?signin=true)
 
+### Includes:
+- React
+- TypeScript
+- ESLint
+- Prettier
+- Stylelint
+- PostCSS
+- Makefile
+
 ## 1. Install
 
 ```bash
