@@ -14,6 +14,21 @@ importers:
       '@testing-library/jest-dom':
         specifier: ^6.4.2
         version: 6.4.2(vitest@1.5.0)
+      '@typescript-eslint/eslint-plugin':
+        specifier: ^7.2.0
+        version: 7.7.0(@typescript-eslint/parser@7.7.0)(eslint@8.57.0)(typescript@5.4.5)
+      '@typescript-eslint/parser':
+        specifier: ^7.2.0
+        version: 7.7.0(eslint@8.57.0)(typescript@5.4.5)
+      eslint:
+        specifier: ^8.57.0
+        version: 8.57.0
+      eslint-plugin-react-hooks:
+        specifier: ^4.6.0
+        version: 4.6.0(eslint@8.57.0)
+      eslint-plugin-react-refresh:
+        specifier: ^0.4.6
+        version: 0.4.6(eslint@8.57.0)
       postcss:
         specifier: ^8.4.38
         version: 8.4.38
@@ -40,7 +55,7 @@ importers:
         version: 3.2.5
       stylelint:
         specifier: ^16.4.0
-        version: 16.4.0
+        version: 16.4.0(typescript@5.4.5)
       stylelint-config-css-modules:
         specifier: ^4.4.0
         version: 4.4.0(stylelint@16.4.0)
@@ -1900,7 +1915,7 @@ packages:
     resolution: {integrity: sha512-Kvp459HrV2FEJ1CAsi1Ku+MY3kasH19TFykTz2xWmMeq6bk2NU3XXvfJ+Q61m0xktWwt+1HSYf3JZsTms3aRJg==}
     dev: true
 
-  /cosmiconfig@9.0.0:
+  /cosmiconfig@9.0.0(typescript@5.4.5):
     resolution: {integrity: sha512-itvL5h8RETACmOTFc4UfIyB2RfEHi71Ax6E/PivVxq9NseKbOWpeyHEOIbmAw1rs8Ak0VursQNww7lf7YtUwzg==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -1913,6 +1928,7 @@ packages:
       import-fresh: 3.3.0
       js-yaml: 4.1.0
       parse-json: 5.2.0
+      typescript: 5.4.5
     dev: true
 
   /cross-spawn@7.0.3:
@@ -3833,7 +3849,7 @@ packages:
     peerDependencies:
       stylelint: ^14.5.1 || ^15.0.0 || ^16.0.0
     dependencies:
-      stylelint: 16.4.0
+      stylelint: 16.4.0(typescript@5.4.5)
     optionalDependencies:
       stylelint-scss: 6.2.1(stylelint@16.4.0)
     dev: true
@@ -3844,7 +3860,7 @@ packages:
     peerDependencies:
       stylelint: ^16.0.0
     dependencies:
-      stylelint: 16.4.0
+      stylelint: 16.4.0(typescript@5.4.5)
     dev: true
 
   /stylelint-config-standard@36.0.0(stylelint@16.4.0):
@@ -3853,7 +3869,7 @@ packages:
     peerDependencies:
       stylelint: ^16.1.0
     dependencies:
-      stylelint: 16.4.0
+      stylelint: 16.4.0(typescript@5.4.5)
       stylelint-config-recommended: 14.0.0(stylelint@16.4.0)
     dev: true
 
@@ -3864,7 +3880,7 @@ packages:
     dependencies:
       postcss: 8.4.38
       postcss-sorting: 8.0.2(postcss@8.4.38)
-      stylelint: 16.4.0
+      stylelint: 16.4.0(typescript@5.4.5)
     dev: true
 
   /stylelint-scss@6.2.1(stylelint@16.4.0):
@@ -3879,11 +3895,11 @@ packages:
       postcss-resolve-nested-selector: 0.1.1
       postcss-selector-parser: 6.0.16
       postcss-value-parser: 4.2.0
-      stylelint: 16.4.0
+      stylelint: 16.4.0(typescript@5.4.5)
     dev: true
     optional: true
 
-  /stylelint@16.4.0:
+  /stylelint@16.4.0(typescript@5.4.5):
     resolution: {integrity: sha512-uSx7VMuXwLuYcNSIg+0/fFNv0WinsfLAqsVVy7h7p80clKOHiGE8pfY6UjqwylTHiJrRIahTl6a8FPxGezhWoA==}
     engines: {node: '>=18.12.0'}
     hasBin: true
@@ -3895,7 +3911,7 @@ packages:
       '@dual-bundle/import-meta-resolve': 4.0.0
       balanced-match: 2.0.0
       colord: 2.9.3
-      cosmiconfig: 9.0.0
+      cosmiconfig: 9.0.0(typescript@5.4.5)
       css-functions-list: 3.2.2
       css-tree: 2.3.1
       debug: 4.3.4

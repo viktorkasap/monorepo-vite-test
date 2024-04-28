@@ -28,7 +28,12 @@
     "stylelint": "^16.4.0",
     "stylelint-config-css-modules": "^4.4.0",
     "stylelint-config-standard": "^36.0.0",
-    "stylelint-order": "^6.0.4"
+    "stylelint-order": "^6.0.4",
+    "@typescript-eslint/eslint-plugin": "^7.2.0",
+    "@typescript-eslint/parser": "^7.2.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6"
   },
   "browserslist": {
     "production": [

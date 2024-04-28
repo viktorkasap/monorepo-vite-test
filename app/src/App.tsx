@@ -19,19 +19,21 @@ function App() {
     }));
   };
   return (
-    <Box>
-      <Text tag="h1">Some Title Here</Text>
-      <Form>
-        <Input type="text" value={nums.a} onChange={handleNumChange('a')} />
-        <Input type="text" value={nums.b} onChange={handleNumChange('b')} />
-        <Button
-          onClick={() => {
-            alert(add(Number(nums.a), Number(nums.b)));
-          }}>
-          Add
-        </Button>
-      </Form>
-    </Box>
+    <Box2>
+      <Box>
+        <Text tag="h1">Some Title Here</Text>
+        <Form>
+          <Input type="text" value={nums.a} onChange={handleNumChange('a')} />
+          <Input type="text" value={nums.b} onChange={handleNumChange('b')} />
+          <Button
+            onClick={() => {
+              alert(add(Number(nums.a), Number(nums.b)));
+            }}>
+            Add
+          </Button>
+        </Form>
+      </Box>
+    </Box2>
   );
 }
 
