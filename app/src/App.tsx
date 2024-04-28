@@ -18,6 +18,7 @@ function App() {
       [key]: e.target.value,
     }));
   };
+
   return (
     <Box2>
       <Box>
