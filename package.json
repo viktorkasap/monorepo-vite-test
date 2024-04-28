@@ -8,6 +8,7 @@
     "build": "pnpm --filter app build",
     "pretty": "prettier --write app packages",
     "style": "stylelint \"**/*.css\" --fix",
+    "lint": "eslint . --ext ts,tsx",
     "type-check": "tsc --noEmit",
     "test:all": "pnpm -r test"
   },

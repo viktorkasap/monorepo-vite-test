@@ -12,6 +12,9 @@ pretty: ## Clean code style
 style: ## Clean styles
 	pnpm style
 
+lint: ## Check code
+	pnpm lint
+
 type-check: ## Check types
 	pnpm type-check
 
