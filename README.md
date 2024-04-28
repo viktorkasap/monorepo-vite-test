@@ -12,7 +12,26 @@
 - PostCSS
 - Makefile
 
+## Pnpm
+**Using PowerShell:**
+```bash
+iwr https://get.pnpm.io/install.ps1 -useb | iex
+```
+**On POSIX systems**
+```bash
+curl -fsSL https://get.pnpm.io/install.sh | sh -
+```
+or
+```bash
+wget -qO- https://get.pnpm.io/install.sh | sh -
+```
+**Using a standalone script**
+```bash
+npm install -g pnpm
+```
+
 ## 1. Install
+
 
 ```bash
 make install
