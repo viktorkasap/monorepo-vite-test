@@ -1,6 +1,8 @@
 import { ChangeEvent, useState } from 'react';
 import { Button, Input, Text } from "@mono/ui";
 import { add } from "@mono/utils";
+import { Box } from '@widgets/box';
+import { Form } from '@features/form';
 import './App.css';
 
 function App() {
@@ -13,14 +15,16 @@ function App() {
       }));
     }
   return (
-    <div>
+    <Box>
         <Text tag='h1'>Some Title Here</Text>
-        <Input type="text" value={nums.a} onChange={handleNumChange('a')}/>
+      <Form >
+      <Input type="text" value={nums.a} onChange={handleNumChange('a')}/>
         <Input type="text" value={nums.b} onChange={handleNumChange('b')}/>
         <Button onClick={() => {
             alert(add(Number(nums.a), Number(nums.b)));
         }}>Add</Button>
-    </div>
+      </Form>
+    </Box>
   )
 }
 
