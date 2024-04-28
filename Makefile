@@ -1,25 +1,23 @@
-# include .env
-
 install: ## ✨ Install pnpm required packages
 	pnpm install --frozen-lockfile
 
 start: ## ✨ Start localhost project
 	pnpm dev
 
-pretty: ## Clean code style
+pretty: ## ✨ Clean code style
 	pnpm pretty
 
-style: ## Clean styles
+style: ## ✨ Clean styles
 	pnpm style
 
-lint: ## Check code
+lint: ## ✨ Check code
 	pnpm lint
 
-type-check: ## Check types
+type-check: ## ✨ Check types
 	pnpm type-check
 
-test: ## Testing
+test: ## ✨ Testing
 	pnpm test:all
 
-build: ## Build project
+build: ## ✨ Build project
 	pnpm build
