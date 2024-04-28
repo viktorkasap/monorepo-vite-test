@@ -51,6 +51,6 @@
 .example {
   display: grid;
   background: linear-gradient(to bottom, white, black);
-  transition: all .5s;
+  transition: all 0.5s;
   user-select: none;
 }

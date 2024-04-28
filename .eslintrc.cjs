@@ -80,6 +80,6 @@ module.exports = {
         prev: '*',
         next: 'return'
       }
-    ]
+    ],
   },
 };

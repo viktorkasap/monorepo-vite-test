@@ -1,1 +1,1 @@
-// export { Box2 } from './Box2';
+export { Box2 } from './Box2';

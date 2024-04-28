@@ -18,5 +18,8 @@ lint: ## Check code
 type-check: ## Check types
 	pnpm type-check
 
+test: ## Testing
+	pnpm test:all
+
 build: ## Build project
 	pnpm build

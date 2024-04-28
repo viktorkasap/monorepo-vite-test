@@ -4,6 +4,7 @@ import { Button, Input, Text } from '@mono/ui';
 import { add } from '@mono/utils';
 
 import { Box } from '@widgets/box';
+import { Box2 } from '@widgets/box2/Box2';
 
 import { Form } from '@features/form';
 
