@@ -26,17 +26,10 @@ module.exports = {
     sourceType: 'module',
     project: ['./tsconfig.json'],
     tsconfigRootDir: __dirname,
-    ecmaFeatures: { 'jsx': true },
+    ecmaFeatures: { jsx: true },
   },
 
-  plugins: [
-    'react',
-    'react-refresh',
-    '@typescript-eslint',
-    'prettier',
-    'import',
-    '@typescript-eslint/eslint-plugin'
-  ],
+  plugins: ['react', 'react-refresh', '@typescript-eslint', 'prettier', 'import', '@typescript-eslint/eslint-plugin'],
 
   rules: {
     'react/display-name': 'off',
@@ -49,8 +42,8 @@ module.exports = {
     'jsx-a11y/anchor-has-content': 'off',
 
     'import/no-anonymous-default-export': 'off',
-    'comma-dangle': [ 'error', 'always-multiline' ],
-    semi: [ 'error', 'always' ],
+    'comma-dangle': ['error', 'always-multiline'],
+    semi: ['error', 'always'],
     'no-console': 'error',
 
     'max-len': [
@@ -60,9 +53,9 @@ module.exports = {
         ignoreUrls: true,
         ignoreStrings: true,
         ignoreComments: true,
-        ignorePattern: 'd=\'([\\s\\S]*?)\''
+        ignorePattern: "d='([\\s\\S]*?)'",
         // svg d=...
-      }
+      },
     ],
 
     '@typescript-eslint/no-unused-vars': [
@@ -71,8 +64,8 @@ module.exports = {
         vars: 'all',
         args: 'after-used',
         ignoreRestSiblings: true,
-        varsIgnorePattern: '^_'
-      }
+        varsIgnorePattern: '^_',
+      },
     ],
 
     // https://eslint.org/docs/latest/rules/padding-line-between-statements
@@ -81,8 +74,8 @@ module.exports = {
       {
         blankLine: 'always',
         prev: '*',
-        next: 'return'
-      }
+        next: 'return',
+      },
     ],
   },
 };

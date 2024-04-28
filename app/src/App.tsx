@@ -10,7 +10,8 @@ import { Form } from '@features/form';
 
 import styles from './Styles.module.css';
 
-const a = '';
+// const a = '';
+// const c = '';
 
 function App() {
   const [nums, setNums] = useState({ a: '', b: '' });
