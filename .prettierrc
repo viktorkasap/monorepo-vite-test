@@ -11,11 +11,9 @@
   "bracketSameLine": true,
   "quoteProps": "as-needed",
   "plugins": ["@ianvs/prettier-plugin-sort-imports"],
-
   "importOrder": [
     ".*styles.css$",
     "",
-    "dayjs",
     "^react$",
     "",
     "<BUILTIN_MODULES>",
@@ -41,8 +39,9 @@
     "",
     "^@test-utils/(.*)$",
     "",
-    "^../(?!.*.css$).*$",
-    "^./(?!.*.css$).*$",
-    "\\.css$"
+    "<TYPES>",
+    "",
+    "^(?!.*[.]css$)[./].*$",
+    ".css$"
   ]
 }

@@ -1,5 +1,14 @@
-import { PropsWithChildren } from 'react';
+import { CSSProperties, PropsWithChildren } from 'react';
 
-export const Box = ({ children }: PropsWithChildren) => {
-  return <div style={{ backgroundColor: 'lightblue' }}>{children}</div>;
+interface BoxProps extends PropsWithChildren {
+  className?: string;
+  style?: CSSProperties;
+}
+
+export const Box = ({ children, className, style }: BoxProps) => {
+  return (
+    <div className={className} style={style}>
+      {children}
+    </div>
+  );
 };
