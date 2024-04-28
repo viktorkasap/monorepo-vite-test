@@ -1,31 +1,38 @@
 import { ChangeEvent, useState } from 'react';
-import { Button, Input, Text } from "@mono/ui";
-import { add } from "@mono/utils";
+
+import { Button, Input, Text } from '@mono/ui';
+import { add } from '@mono/utils';
+
 import { Box } from '@widgets/box';
+
 import { Form } from '@features/form';
+
 import './App.css';
 
 function App() {
-  const [nums, setNums] = useState({a: '', b: ''})
+  const [nums, setNums] = useState({ a: '', b: '' });
 
-    const handleNumChange = (key: keyof typeof nums) => (e: ChangeEvent<HTMLInputElement>) => {
-      setNums((prevState) => ({
-          ...prevState,
-          [key]: e.target.value,
-      }));
-    }
+  const handleNumChange = (key: keyof typeof nums) => (e: ChangeEvent<HTMLInputElement>) => {
+    setNums((prevState) => ({
+      ...prevState,
+      [key]: e.target.value,
+    }));
+  };
   return (
     <Box>
-        <Text tag='h1'>Some Title Here</Text>
-      <Form >
-      <Input type="text" value={nums.a} onChange={handleNumChange('a')}/>
-        <Input type="text" value={nums.b} onChange={handleNumChange('b')}/>
-        <Button onClick={() => {
+      <Text tag="h1">Some Title Here</Text>
+      <Form>
+        <Input type="text" value={nums.a} onChange={handleNumChange('a')} />
+        <Input type="text" value={nums.b} onChange={handleNumChange('b')} />
+        <Button
+          onClick={() => {
             alert(add(Number(nums.a), Number(nums.b)));
-        }}>Add</Button>
+          }}>
+          Add
+        </Button>
       </Form>
     </Box>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -1,0 +1,53 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-css-modules"
+  ],
+  "plugins": [
+    "stylelint-order"
+  ],
+  "rules": {
+    "order/order": [
+      "custom-properties",
+      "declarations"
+    ],
+    "order/properties-order": [
+      [
+        "display",
+        "width",
+        "max-width",
+        "min-width",
+        "height",
+        "max-height",
+        "min-height",
+        "margin",
+        "margin-top",
+        "margin-right",
+        "margin-bottom",
+        "margin-left",
+        "padding",
+        "padding-top",
+        "padding-right",
+        "padding-bottom",
+        "padding-left",
+        "position",
+        "top",
+        "left",
+        "bottom",
+        "right",
+        "font-size",
+        "font-weight",
+        "color",
+        "background",
+        "background-color",
+        "background-size",
+        "background-position",
+        "transition",
+        "filter"
+      ],
+      {
+        "unspecified": "bottomAlphabetical"
+      }
+    ]
+  }
+}
