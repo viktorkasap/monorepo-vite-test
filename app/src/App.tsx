@@ -21,9 +21,9 @@ function App() {
 
   return (
     <Box className={styles.box}>
-      <Box2>Example Second Box component</Box2>
+      <Box2>Example Second Box component for checking imports order</Box2>
       <Text tag="h3" className={styles.title}>
-        Some Title Here
+        Some Title Here!
       </Text>
       <Form>
         <Input type="text" value={nums.a} onChange={handleNumChange('a')} />
