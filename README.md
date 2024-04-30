@@ -4,7 +4,7 @@
 
 > 💡 In this version `style.css` is built in a separate file, so it should be connected separately as a single set of styles for the whole UI.
 
-package.json
+`./packages/ui/package.json`
 ```json
 {
   "sideEffects": [
