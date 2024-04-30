@@ -1,7 +1,5 @@
 import { ChangeEvent, useState } from 'react';
 
-import '@mono/ui/style.css'; // !!!
-
 import { Button, Input, Text } from '@mono/ui';
 import { add } from '@mono/utils';
 
