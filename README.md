@@ -2,6 +2,16 @@
 
 > 👉 [Article Ref](https://dev.to/lico/react-monorepo-setup-tutorial-with-pnpm-and-vite-react-project-ui-utils-5705?signin=true)
 
+package.json
+```json
+{...
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  ...
+}
+```
+
 > 💡 In this version `style.css` is built in a separate file, so it should be connected separately as a single set of styles for the whole ui.
 
 ### Includes:
