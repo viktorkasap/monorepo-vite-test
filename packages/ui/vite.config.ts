@@ -1,3 +1,4 @@
+import { resolve } from 'path';
 import react from '@vitejs/plugin-react-swc';
 import { defineConfig } from 'vite';
 import dts from 'vite-plugin-dts';
@@ -10,20 +11,11 @@ export default defineConfig(({ mode }) => ({
   build: {
     lib: {
       name: 'ui',
-      entry: './src/index.ts',
+      entry: resolve(__dirname, 'src/index.ts'),
       formats: ['es', 'cjs'],
       fileName: (format, entryName) => {
         console.log('File Name:', format, entryName);
         return `${entryName}.${formats[format] || format}`;
-      },
-    },
-    rollupOptions: {
-      output: {
-        assetFileNames: (assetInfo) => {
-          console.log('Asset Info:', JSON.stringify(assetInfo), '\n');
-          if (assetInfo?.name?.endsWith('.css')) return `[name][extname]`;
-          return `[name].[extname]`;
-        },
       },
     },
   },

@@ -7,11 +7,10 @@
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "sideEffects": [
-    "*.css"
+    "**/*.css"
   ],
   "files": [
-    "dist",
-    "src"
+    "dist"
   ],
   "exports": {
     ".": {
@@ -23,7 +22,6 @@
   },
   "scripts": {
     "dev": "vite",
-    "build2": "vite build",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
