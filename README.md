@@ -4,6 +4,15 @@
 
 > 💡 In this version, `css` is included in the original `.cjs` and `.mjs` bundles and no separate `style.css` file connection is required.
 
+package.json
+```json
+{
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+}
+```
+
 ### Includes:
 
 - React
