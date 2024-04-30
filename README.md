@@ -4,7 +4,7 @@
 
 > 💡 In this version, `css` is included in the original `.cjs` and `.mjs` bundles and no separate `style.css` file connection is required.
 
-package.json
+`./packages/ui/package.json`
 ```json
 {
   "main": "./dist/index.cjs",
