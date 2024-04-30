@@ -6,6 +6,7 @@
 
 package.json
 ```json
+{
   "sideEffects": [
     "**/*.css"
   ],
@@ -20,6 +21,7 @@ package.json
     },
     "./style.css": "./dist/style.css"
   }
+}
 ```
 
 ### Includes:
