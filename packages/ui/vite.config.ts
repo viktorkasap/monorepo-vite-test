@@ -1,13 +1,14 @@
 import { resolve } from 'path';
 import react from '@vitejs/plugin-react-swc';
 import { defineConfig } from 'vite';
+import cssInjectedByJsPlugin from 'vite-plugin-css-injected-by-js';
 import dts from 'vite-plugin-dts';
 
 const formats = { es: 'mjs', cjs: 'cjs' } as Record<string, string>;
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  plugins: [react(), dts({ insertTypesEntry: true })],
+  plugins: [react(), dts({ insertTypesEntry: true }), cssInjectedByJsPlugin()],
   build: {
     lib: {
       name: 'ui',
