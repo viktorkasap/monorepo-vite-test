@@ -1,6 +1,7 @@
 # Monorepo PNPM + Vite + React + TypeScript
 
 > 👉 [Article Ref](https://dev.to/lico/react-monorepo-setup-tutorial-with-pnpm-and-vite-react-project-ui-utils-5705?signin=true)
+> [SeongKuk Han](https://dev.to/lico) 
 
 > 💡 In this version, `css` is included in the original `.cjs` and `.mjs` bundles and no separate `style.css` file connection is required.
 
