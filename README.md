@@ -11,6 +11,8 @@
 - Stylelint
 - PostCSS
 - Makefile
+- Husky
+- LintStaged
 
 ## Pnpm
 **Using PowerShell:**
