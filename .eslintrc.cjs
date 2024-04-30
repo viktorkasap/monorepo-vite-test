@@ -6,7 +6,7 @@ module.exports = {
     'import/resolver': {},
   },
 
-  ignorePatterns: ['dist', 'node_modules', '*.cjs', '*.mjs', '*.json', '*.config.js'],
+  ignorePatterns: ['dist', 'node_modules', '*.cjs', '*.mjs', '*.json', '*.config.js', '*.config.ts'],
 
   extends: [
     'eslint:recommended',

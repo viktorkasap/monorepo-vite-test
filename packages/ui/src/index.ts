@@ -1,6 +1,5 @@
-import './base.css';
-import './vars.css';
+import './styles/index.css';
 
-export { Button } from './Button';
-export { Input } from './Input';
-export { Text } from './Text';
+export * from './button';
+export * from './input';
+export * from './text';

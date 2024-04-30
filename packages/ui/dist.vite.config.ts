@@ -12,20 +12,9 @@ export default defineConfig(({ mode }) => ({
       name: 'ui',
       entry: './src/index.ts',
       formats: ['es', 'cjs'],
-      fileName: (format, entryName) => {
-        console.log('File Name:', format, entryName);
-        return `${entryName}.${formats[format] || format}`;
-      },
+      fileName: (format, entryName) => `${entryName}.${formats[format] || format}`,
     },
-    rollupOptions: {
-      output: {
-        assetFileNames: (assetInfo) => {
-          console.log('Asset Info:', JSON.stringify(assetInfo), '\n');
-          if (assetInfo?.name?.endsWith('.css')) return `[name][extname]`;
-          return `[name].[extname]`;
-        },
-      },
-    },
+    rollupOptions: {},
   },
   resolve: {
     conditions: mode === 'test' ? ['browser'] : [],
